@@ -27,7 +27,7 @@ Other functions allow you to customize the look, changing colors or the prompt s
 The current high **Windows** dependency should not scare. This is an evolution of an "advanced getline" i started on linux, so i already have much of the code ready. But expect a lot of OS related "#ifdef/#endif"s with the **Windows**-**Linux** version.
 
 ## Methods
-Note: the .cpp file already contains a main method with a working usage example (and an *error*);
+Note: the .cpp file already contains a main method with a working usage example;
 ```
 getline_handler(size_t str_max_len, usi history_amount)
 ```

@@ -1,0 +1,8 @@
+#visual studio stuff
+Debug/
+Release/
+getline.vcxproj
+getline.vcxproj.filters
+stdafx.cpp
+stdafx.h
+targetver.h
