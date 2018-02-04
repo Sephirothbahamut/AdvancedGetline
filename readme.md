@@ -20,7 +20,7 @@ Other functions allow you to customize the look, changing colors or the prompt s
    - [x] Type replacing highlighted text
    - [x] [Del] and [Backspace] delete highlighted text.
    - [x] [Del] and [Backspace] without highlighted text behave as you expect them to.
-   - [ ] [Up] and [Down] arrows allow navigation in previous input lines (ready to be completed)
+   - [x] [Up] and [Down] arrows allow navigation in previous input lines (ready to be completed)
    - [ ] [Ctrl]+[X], [Ctrl]+[V] to cut highlighted text (copying to actual clipboard) and paste.
    - [ ] mouse cursor interaction (far far future, in a galaxy far away... possibly... maybe... unlikely)
    
