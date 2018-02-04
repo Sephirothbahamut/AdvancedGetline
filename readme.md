@@ -22,7 +22,8 @@ Other functions allow you to customize the look, changing colors or the prompt s
    - [x] [Del] and [Backspace] without highlighted text behave as you expect them to.
    - [x] [Up] and [Down] arrows allow navigation in previous input lines (ready to be completed)
    - [ ] [Ctrl]+[X], [Ctrl]+[V] to cut highlighted text (copying to actual clipboard) and paste.
-   - [ ] mouse cursor interaction (far far future, in a galaxy far away... possibly... maybe... unlikely)
+   - [ ] Mouse cursor interaction (far far future, in a galaxy far away... possibly... maybe... unlikely)
+   - [x] Sound system alert when the cursor is trying to go out of bounds.
    
 ## About **Linux** version
 The current high **Windows** dependency should not scare. This is an evolution of an "advanced getline" i started on linux, so i already have much of the code ready. But expect a lot of OS related "#ifdef/#endif"s with the **Windows**-**Linux** version.
@@ -30,9 +31,20 @@ The current high **Windows** dependency should not scare. This is an evolution o
 ## Methods
 Note: the .cpp file already contains a main method with a working usage example;
 ```
+getline_handler(size_t str_max_len, usi history_amount, bool sound)
+```
+The constructor, it takes the maximum length for input strings (str_max_len, the amount of lines it must keep in memory to make them accessible on future calls via [Up] and [Down] arrows (set it to 1 if in doubt), and a boolean. If sound is true the user will hear a system alert sound when the cursor is going out of bounds.
+
+```
 getline_handler(size_t str_max_len, usi history_amount)
 ```
-The construction, it takes the maximum length for input strings (str_max_len) and the amount of lines it must keep in memory to make them accessible on future calls via [Up] and [Down] arrows. (set it to 1 if in doubt)
+Like the previous one, sound is true by default.
+```
+getline_handler()
+```
+Simpliest constructor, it initializes all the settings to a certain default:
+max string length: 128, history amount: 10, sound: true
+
 
 ```
 char* getline()
