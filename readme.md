@@ -14,7 +14,8 @@ Once the class is instantiated, you will be able to call its main function "getl
 Other functions allow you to customize the look, changing colors or the prompt string.
    - [x] Type text (yeah, this too)
    - [x] [Enter] to close the input (of course)
-   - [x] Move the cursor witl [Left] and [Right] arrows.
+   - [x] Move the cursor with [Left] and [Right] arrows.
+   - [x] Move the cursor with [Home/Begin] and [End] keys.
    - [x] Highlight the text with [Shift]+[Left] and [Shift]+[Right].
    - [x] Type replacing highlighted text
    - [x] [Del] and [Backspace] delete highlighted text.
@@ -68,4 +69,5 @@ set_color(color::white, false, color::black, false);
 set_color_prompt(color::aqua, false, color::black, false);
 set_color_highlight(color::black, false, color::black, true);
 ```
-	
+## Known bugs
+When selecting from the rightmost position and deleting highlighted content, a bug prevents the line from clearing. The input will still be correct, despite the prompt showing more characters than needed. Launching the process in debug mode will still show the actuall string down below.
