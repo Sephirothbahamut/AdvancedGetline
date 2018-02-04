@@ -63,9 +63,9 @@ class getline_handler
 		void set_color_highlight(color c);
 		void set_color_prompt(color c);
 
-		//usage
 		getline_handler(size_t str_max_len, usi history_amount);
 		~getline_handler();
+
 		char* getline();
 
 	};
