@@ -1,8 +1,8 @@
 #pragma once
 
-#define usi unsigned short int
 #include "Windows.h"
 #include "conio.h"
+#define usi unsigned short int
 
 class getline_handler
 	{
