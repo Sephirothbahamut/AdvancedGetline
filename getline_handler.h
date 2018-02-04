@@ -1,6 +1,8 @@
 #pragma once
 
 #define usi unsigned short int
+#include "Windows.h"
+#include "conio.h"
 
 class getline_handler
 	{
@@ -49,7 +51,9 @@ class getline_handler
 		usi active_lines;
 		char* line;
 		bool ins;
-		bool getline_handler::clear_highlight();
+		bool clear_highlight();
+		void clear_line(COORD& new_pos, HANDLE& hstdout);
+		void new_line();
 
 	public:
 
