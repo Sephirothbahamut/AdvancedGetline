@@ -51,7 +51,6 @@ class getline_handler
 		bool ins;
 		bool getline_handler::clear_highlight();
 
-
 	public:
 
 		//style

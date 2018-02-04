@@ -70,4 +70,6 @@ set_color_prompt(color::aqua, false, color::black, false);
 set_color_highlight(color::black, false, color::black, true);
 ```
 ## Known bugs
+
+## Solved bugs
 When selecting from the rightmost position and deleting highlighted content, a bug prevents the line from clearing. The input will still be correct, despite the prompt showing more characters than needed. Launching the process in debug mode will still show the actuall string down below.
