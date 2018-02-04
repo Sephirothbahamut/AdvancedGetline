@@ -77,9 +77,9 @@ The available colors are:
    
 The following are the default colors:
 ```
-set_color(color::white, false, color::black, false);
-set_color_prompt(color::aqua, false, color::black, false);
-set_color_highlight(color::black, false, color::black, true);
+set_color(color::white, false, color::black, false);	silver on black text
+set_color_prompt(color::aqua, false, color::black, false);  aqua on black prompt
+set_color_highlight(color::black, false, color::black, true);  black on dark gray highlight
 ```
 ## Known bugs
 
