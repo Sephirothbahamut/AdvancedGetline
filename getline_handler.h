@@ -35,7 +35,6 @@ class getline_handler
 		color color_main;
 		color color_highlight;
 		color color_prompt;
-		bool sound;
 		
 		//draw
 		void erase_output_line();
@@ -59,6 +58,7 @@ class getline_handler
 	public:
 
 		//style
+		bool sound;
 		void set_prompt(char* new_prompt);
 		void set_color(color foreground, bool fg_light, color background, bool bg_light);
 		void set_color_highlight(color foreground, bool fg_light, color background, bool bg_light);
@@ -67,6 +67,7 @@ class getline_handler
 		void set_color_highlight(color c);
 		void set_color_prompt(color c);
 
+		//functions
 		getline_handler();
 		getline_handler(size_t str_max_len, usi history_amount);
 		getline_handler(size_t str_max_len, usi history_amount, bool sound);
